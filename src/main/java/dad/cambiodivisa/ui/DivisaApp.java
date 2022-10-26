@@ -11,8 +11,10 @@ public class DivisaApp extends Application {
 
 		Controller controller = new Controller();
 		
+		Scene scene = new Scene(controller.getView());
+		
 		primaryStage.setTitle("Cambio de divisa");
-		primaryStage.setScene(new Scene(controller.getView(), 320, 200));
+		primaryStage.setScene(scene);
 		primaryStage.show();
 		
 	}
